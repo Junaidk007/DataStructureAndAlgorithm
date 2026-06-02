@@ -28,7 +28,7 @@ public class Question5 {
      }
 
      public static void main(String[] args) {
-        int[] arr = {10, 5, 3, 4, 3, 5, 6};
+        int[] arr = {1, 2, 3, 1, 4, 8};
 
         int k = 3;
 
