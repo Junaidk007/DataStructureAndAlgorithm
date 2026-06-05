@@ -11,8 +11,6 @@
 // Explanation: After swapping each pair considering (1,2), (2, 4), (5, 6).. so on as pairs, 
 // we get 2, 1, 4, 2, 6, 5, 8, 7 as a new linked list.
 
-
-
 package LinkedList.Questions.Basic;
 
 class Node {
@@ -35,7 +33,12 @@ public class Question6 {
             Node nextNode = temp.next;
             temp.next = nextNode.next;
             nextNode.next = temp;
-            if(prev == null) { head = nextNode; } else { prev.next = nextNode; }
+            
+            if (prev == null) {
+                head = nextNode;
+            } else {
+                prev.next = nextNode;
+            }
 
             prev = temp;
             temp = temp.next;
@@ -68,6 +71,6 @@ public class Question6 {
 
         Node newHead = pairWiseSwap(head);
 
-        display(newHead);   
+        display(newHead);
     }
 }
