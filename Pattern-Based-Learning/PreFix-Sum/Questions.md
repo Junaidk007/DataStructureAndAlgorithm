@@ -1,0 +1,3 @@
+# Prefix Sum Pattern Questions
+
+1. [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/)
